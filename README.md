@@ -1,5 +1,7 @@
 # 📊 POWER BI MASTER SKILL by JG: Automation CLI & DAX Standards
 
+![Power BI Master Skill Banner](assets/preview.png)
+
 This repository contains the **POWER BI MASTER SKILL by JG**, the definitive engineering standard and automation suite for professional Power BI development. 
 
 ## 🚀 Expert Power BI Automation & Engineering
