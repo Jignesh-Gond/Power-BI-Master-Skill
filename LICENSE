@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Jignesh Gond
+Copyright (c) 2026 JG
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+──────────────────────────────────────────────────────────────────────────────
+THIRD-PARTY COMPONENTS
+
+The core CLI depends only on the Python standard library. The OPTIONAL,
+Windows-only live-model features depend on third-party software distributed
+under their own licenses:
+
+  • pythonnet ............................ MIT License
+  • pywin32 ............................. PSF License
+  • Analysis Services client libraries .. Microsoft license
+    (AMO / TOM — ships with Power BI Desktop and SSMS)
+
+Their respective licenses apply to those components.

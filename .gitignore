@@ -1,0 +1,48 @@
+# ───────────────────────────────────────────────────────────────────────
+#  Power BI Master Skill — .gitignore
+#  Keeps the repo to source + docs only. Real reports (which contain
+#  business data) and temp surgery artifacts never get committed.
+# ───────────────────────────────────────────────────────────────────────
+
+# --- Power BI reports & their backups (contain private business data) ----
+*.pbix
+*.pbit
+*.BACKUP
+*.bak
+
+# --- Temp PBIX extraction / repack workspaces -----------------------------
+# The CLI unzips a .pbix into a scratch dir; never commit those.
+_extract*/
+_tmp*/
+tmp_*/
+*_unpacked/
+DataModel
+src/
+
+# --- Exported model artifacts (regenerate with `measures export`) ---------
+*.dax
+
+# --- Python caches / environments ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# --- Editor / OS / local agent tooling -----------------------------------
+.vscode/
+.idea/
+.opencode/
+.gemini/
+.claude/
+.antigravitycli/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Allow-list: keep the banner asset ------------------------------------
+!assets/
+!assets/*.png

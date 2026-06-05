@@ -1,0 +1,19 @@
+# Power BI Master Skill — Python dependencies
+#
+# The CORE CLI needs NOTHING beyond the Python 3.9+ standard library.
+# Every PBIX file-surgery command (analyze, fix-visuals, overhaul,
+# build-v16/17, page ops, swap-datamodel, backup, ...) runs with a plain
+# Python install — no `pip install` required.
+#
+# The packages below are OPTIONAL and Windows-only. Install them ONLY if
+# you want the live-model / persistence features.
+
+# --- Live-model DAX injection & audit (the `measures` commands) ----------
+# Connects to Power BI Desktop's embedded SSAS instance via TOM.
+# Also requires the Analysis Services client libraries (AMO/TOM), which
+# ship with Power BI Desktop and SQL Server Management Studio (SSMS).
+pythonnet>=3.0.0
+
+# --- Persisting live changes to disk (the `save` command) ----------------
+# Sends Ctrl+S to the Power BI Desktop window.
+pywin32>=306
